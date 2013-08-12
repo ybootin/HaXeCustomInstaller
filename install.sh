@@ -20,21 +20,15 @@ tar -xzf $HAXE3FILE.tar.gz
 rm -Rf $HAXE2FILE.tar.gz
 rm -Rf $HAXE3FILE.tar.gz
 
-sudo mv $HAXE2FILE/ /usr/lib/haxe2/
-sudo mv $HAXE3FILE/ /usr/lib/haxe3/
-
-#backup current haxe
-sudo mv /usr/lib/haxe/ /usr/lib/haxe-backup/
+mv $HAXE2FILE/ /usr/lib/haxe2/
+mv $HAXE3FILE/ /usr/lib/haxe3/
 
 #activate specified version
-sudo ln -s /usr/lib/haxe$VERSION/ /usr/lib/haxe
+ln -s /usr/lib/haxe2/haxe /usr/bin/haxe2
+ln -s /usr/lib/haxe3/haxe /usr/bin/haxe3
 
-#activate switch script
-sudo cp haxe2 /usr/bin/
-sudo cp haxe3 /usr/bin/
-
-sudo chmod +x /usr/bin/haxe2
-sudo chmod +x /usr/bin/haxe3
+chmod +x /usr/bin/haxe2
+chmod +x /usr/bin/haxe3
 
 
 

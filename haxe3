@@ -1,4 +1,0 @@
-#!/bin/bash
-
-rm /usr/lib/haxe
-ln -s /usr/lib/haxe3 /usr/lib/haxe
