@@ -1,23 +1,27 @@
 HaXeCustomInstaller
 ===================
 
-Install HaXe2 and HaXe3 for OSX in separate directory.
-It's safe, you can keep your current HaXe install
+Install HaXe2 and HaXe3 for OSX in separate directory, and 2 scripts to switch from haxe 2 or 3 version
 
-#install
+#Install
 
 Clone the repository and run the install script as super user
 
     sudo ./install.sh
 
-#usage
+#Usage
 
-just run the binary you want to between haxe2 and haxe3
+A switch must be perform as a super user.
 
-    haxe2 mybuild.hxml
-    haxe3 mybuild.hxml
+Switch to haxe2
 
-#uninstall
+    sudo haxe2-switch
+
+Switch to haxe3
+
+    sudo haxe3-switch
+
+#Uninstall
 
 Just run the uninstall script as super user
 
