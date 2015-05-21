@@ -4,8 +4,8 @@
 OS=osx
 HAXE2FILE=haxe-2.10-$OS
 HAXE3FILE=haxe-3.0.0-$OS
-HAXE2DIR="http://haxe.org/file/$HAXE2FILE.tar.gz"
-HAXE3DIR="http://haxe.org/file/$HAXE3FILE.tar.gz"
+HAXE2DIR="http://old.haxe.org/file/$HAXE2FILE.tar.gz"
+HAXE3DIR="http://old.haxe.org/file/$HAXE3FILE.tar.gz"
 
 #check existing install
 if [ -d /usr/lib/haxe2/ ]; then
